@@ -1,7 +1,6 @@
 Array.prototype.filter = function (callback, context) {
   const result = [];
-  let that = [...this];
-  const length = that.length;
+  const length = this.length;
 
   for (let i = 0; i < length; i++) {
     if (i in this) {
